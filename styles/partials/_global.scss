@@ -1,0 +1,115 @@
+/* ----- VARIABLE DECLARATIONS -----*/
+$accentColor: #F2A61A;
+$mainColor: #000000;
+$mainColor75: #444444;
+$mainColor50: #888888;
+$mainColor25: #CCCCCC;
+$lightColor: #FFFFFF;
+$montserrat: 'Montserrat', sans-serif;
+$crimson: 'Crimson Text', serif;
+$allTrans: all 0.2s ease-out;
+
+
+/* ----- GLOBAL STYLES -----*/
+body {
+    font-size: 62.5%;
+    font-family: $montserrat;
+}
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.paragraph__preTitle {
+    color: $mainColor50;
+    font-family: $crimson;
+    font-size: 0.9rem;
+}
+.paragraph__title {
+    color: $mainColor;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.paragraph__mainText {
+    color: $mainColor50;
+    line-height: 2;
+    font-size: 0.75rem;
+}
+.paragraph__endQuote {
+    margin-top: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.6rem;
+    letter-spacing: 2px;
+}
+.paragraph__endQuote span {
+    font-weight: normal;
+    font-family: $crimson;
+    color: $mainColor50;
+    letter-spacing: 1px;
+}
+.paragraph__endQuote::before {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 75px;
+    background-color: $mainColor75;
+    position: relative;
+    top: -10px;
+}
+
+/* ----- BUTTON STYLE -----*/
+.button {
+    text-transform: uppercase;
+    padding: 17px;
+    letter-spacing: 4px;
+    color: $mainColor;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid $mainColor;
+    transition: $allTrans;
+    white-space: nowrap;
+}
+.button:hover {
+    color: $lightColor;
+    background-color: $mainColor;
+}
+
+/* ----- SECTION HEADERS -----*/
+.titleBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.titleBlock__title {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+}
+.titleBlock__icon {
+    color: $mainColor50;
+    position: relative;
+}
+.titleBlock__icon::before, .titleBlock__icon::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 60px;
+    background-color: $mainColor25;
+    position: absolute;
+    top: 6px;
+}
+.titleBlock__icon::before {
+    right: 20px;
+}
+.titleBlock__icon::after {
+    left: 20px;
+}
+.titleBlock__text {
+    font-family: $crimson;
+    color: $mainColor50;
+    font-size: 0.8rem;
+}

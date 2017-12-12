@@ -1,0 +1,179 @@
+/* ----- NAV -----*/
+.headNav {
+    width: 100%; 
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logoLink {
+    transform: scale(1.0);
+    position: relative;
+    top: 0;
+    transition: all 0.3s ease-out;
+}
+.logoLink:hover, .logoLink:focus {
+    transform: scale(1.05);
+    top: -3px;
+}
+.hamburgerMenuOpen, .hamburger, .hamburgerExit {
+    display: none;
+}
+.menuItems {
+    display: flex;
+}
+.navContent {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+.nav__linkList, .nav__iconList {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.nav__linkList {
+    width: 90%;
+    padding-right: 30px;
+}
+.nav__iconList {
+    width: 10%;
+}
+.navContent a {
+    color: $lightColor;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    padding: 15px;
+    position: relative;
+    top: 0;
+    transition: $allTrans;
+}
+.navContent a::after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    background-color: $accentColor;
+    width: calc(100% - 30px);
+    opacity: 0;
+    top: 30px;
+    left: 15px;
+    transition: $allTrans;
+}
+.navContent a:hover, .navContent a:focus {
+    top: -3px;
+    font-size: 0.8rem;
+}
+.navContent a:hover::after, .navContent a:focus::after {
+    top: 40px;
+    opacity: 1;
+}
+.nav__linkItem i {
+    position: absolute;
+    right: 0;
+    top: 17px;
+}
+
+/* ----- MAIN HEADER -----*/
+header {
+    background-image: url('../assets/headMountains.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.titleScreen {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $lightColor;
+    width: 100%;
+    position: relative;
+    top: calc(50% - 100px);
+    transform: translateY(-50%);
+}
+.pageTitle__title {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 7rem;
+    font-weight: 600;
+    letter-spacing: -5px;
+    line-height: 0.9;
+}
+.pageTitle__title--small {
+    font-size: 4.5rem;
+}
+.pageTitle__subtitle {
+    font-family: $crimson;
+    text-align: center;
+    font-size: 1rem;
+}
+.pageTitle__enter {
+    border: 1.5px solid $lightColor;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: $allTrans;
+    margin-top: 50px;
+    background-color: rgba(0,0,0,0.5);
+    color: $lightColor;
+    font-family: $crimson;
+    font-size: 1rem;
+}
+.pageTitle__enter i {
+    color: $lightColor;
+    position: absolute;
+    top: 50px;
+    transition: $allTrans;
+    opacity: 0;
+    font-size: 2rem;
+}
+.pageTitle__enter:hover, .pageTitle__enter:focus {
+    background-color: rgba(255,255,255,0.5);
+    top: -5px;
+    color: black;
+}
+.pageTitle__enter:hover i, .pageTitle__enter:focus i {
+    top: 75px;
+    opacity: 1;
+}
+.titleScreen__arrow {
+    border: 1.5px solid rgba(255,255,255,0.3);
+    min-height: 40px;
+    min-width: 40px;
+    color: white;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 35px;
+    position: relative;
+    top: 0;
+    background-color: rgba(255,255,255,0);
+    transition: $allTrans;
+}
+.titleScreen__arrow:hover, .titleScreen__arrow:focus {
+    background-color: rgba(255,255,255,0.3);
+    top: -2px;
+}
+.titleScreen__arrow .fa-angle-right, .titleScreen__arrow .fa-angle-left {
+    position: relative;
+}
+.titleScreen__arrow--left {
+    margin-right: 0;
+}
+.titleScreen__arrow--right {
+    margin-left: 0;
+}

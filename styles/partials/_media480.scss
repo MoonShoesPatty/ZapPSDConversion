@@ -1,0 +1,154 @@
+/* ----- BREAK POINT: 480px -----*/
+@media (max-width: 480px) {
+    /* ----- HEADER -----*/
+    .titleScreen {
+        justify-content: center;
+    }
+    .titleScreen__arrow {
+        position: absolute;
+        margin: 0;
+        top: 65%;
+    }
+    .titleScreen__arrow--left {
+        left: 10px;
+    }
+    .titleScreen__arrow--right {
+        right: 10px;
+    }
+    .pageTitle__title {
+        font-size: calc(1rem + 10vw);
+    }
+    .pageTitle__title--small {
+        font-size: calc(1rem + 7vw);
+    }  
+
+    /* ----- WELCOME SECTION -----*/
+    .serviceOfferWrapper {
+        min-width: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .serviceOfferWrapper .button {
+        white-space: nowrap;
+    }
+    .serviceOffer {
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        left: -50px;
+    }
+    .serviceOffer__iconBorder {
+        margin: 5px 0;
+        margin-right: 15px;
+    }
+    .serviceOffer__title {
+        margin: 0;
+    }
+    .verticalLogo {
+        height: 30vw;
+        top: -110px;
+        right: 80px
+    }
+    
+    /* ----- GALLERY SECTION -----*/
+    .gallery__overlay {
+        position: relative;
+        background-color: $mainColor25;
+        color: $mainColor;
+    }
+    .gallery__overlay::after {
+        background-color: $mainColor50;
+        width: 2px;
+    }
+
+    /* ----- WHY US SECTION -----*/
+    .demoPicture {
+        display: none;
+    }
+    .whyUsContent .paragraph__mainText {
+        padding-right: 0;
+    }
+
+    /* ----- WHY US - REASONS LIST -----*/
+    .reasonsList {
+        flex-direction: column;
+    }
+    .reasonItem {
+        width: 100%;
+    }
+    .reasonItem:nth-child(-n + 5) {
+        border-bottom: 1px solid #EEEEEE;
+        padding-bottom: 0px;
+    }
+    .reasonItem:nth-child(even) {
+        flex-direction: row-reverse;
+        text-align: right;
+    }
+    .reasonItem:nth-child(even) .reasonItem__icon {
+        margin-right: 2px;
+        margin-left: 10%;
+    }
+
+    /* ----- TEAM -----*/
+    .teamMember__nameWrapper {
+        padding: 5px;
+    }
+    .teamMember__name {
+        letter-spacing: 0;
+        font-size: 0.7rem;
+    }
+    .teamMember__jobTitle {
+        font-size: 0.7rem;
+    }
+
+    /* ----- STATS SECTION -----*/
+    .statItem__number {
+        font-size: calc(1rem + 2vw);
+        letter-spacing: 0;
+    }
+    .statItem__label {
+        text-align: center;
+        position: relative;
+    }
+    .statItem__label::after {
+        position: absolute;
+        top: 30px;
+    }
+
+    /* ----- CLIENTS -----*/
+    .clientList {
+        margin-bottom: 325px;
+    }
+    /* ----- BLOG -----*/
+    .blogItem {
+        height: 230px;
+    }
+    .blogItem__description {
+        padding: 25px;
+    }
+    .blogItem__title {
+        margin: 5px 0;
+        font-size: 1rem;
+    }
+    .blogItem__text {
+        line-height: 1.5;
+    }
+    .blogItem__read {
+        bottom: 10px;
+    }
+
+    /* ----- PRICE PLANS -----*/
+    .planItem__featureItem {
+        position: relative;
+    }
+    .planItem__price::before {
+        top: -10px;
+        left: -2px;
+    }
+    .planItem__price::after {
+        letter-spacing: 1px;
+    }
+    .planItem .planItem__button {
+        margin-left: 15px;
+    }
+}

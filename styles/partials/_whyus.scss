@@ -1,0 +1,41 @@
+/* ----- WHY US SECTION -----*/
+
+.whyUsContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.demoPicture {
+    height: 280px;
+    margin-left: 10%;
+}
+.reasonsList {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    margin-top: 20px;
+}
+.reasonItem {
+    width: calc(33% - 40px);
+    margin: 20px;
+    display: flex;
+}
+.reasonItem__icon {
+    font-size: 2rem;
+    margin-right: 15%;
+}
+.reasonItem:nth-child(-n + 3) {
+    border-bottom: 1px solid #EEEEEE;
+    padding-bottom: 20px;
+}
+.reasonItem__title {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+}
+.reasonItem__text {
+    color: $mainColor50;
+    line-height: 2;
+}

@@ -1,0 +1,25 @@
+/* ----- QUOTE SECTION -----*/
+.priceQuote {
+    background-color: #222222;
+}
+.priceQuote__text {
+    color: white;
+    font-family: $crimson;
+    font-size: 1.3rem;
+    margin: 0;
+}
+.priceQuote__text span {
+    color: $accentColor;
+}
+.priceQuote .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.priceQuote__button {
+    background-color: $accentColor;
+    color: $lightColor;
+    border-color: rgba(0,0,0,0);
+    white-space: nowrap;
+    margin-left: 15px;
+}

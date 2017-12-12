@@ -1,0 +1,47 @@
+.welcomeFlex {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px auto 0 auto;
+}
+.welcomeContent {
+    margin-left: 100px;
+}
+.serviceOfferWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    flex-wrap: wrap;
+}
+.serviceOffer {
+    display: flex;
+    align-items: center;
+    width: 33%;
+    margin: 0;
+}
+.serviceOffer__iconBorder {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    min-width: 50px;
+    border: 1px solid $mainColor25;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.serviceOffer__icon {
+    font-size: 1.3rem;
+}
+.serviceOffer__title {
+    text-transform: uppercase;
+    color: $mainColor;
+    font-size: 0.65rem;
+    font-weight: bold;
+}
+.welcome .button {
+    margin-top: 55px;
+}
+.verticalLogo {
+    width: 125px;
+    height: 400px;
+}

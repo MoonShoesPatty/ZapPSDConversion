@@ -1,0 +1,177 @@
+/* ----- FOOTER STYLES -----*/
+.pageFooter {
+    background-color: #222222;
+    color: $mainColor50;
+}
+.footerInfo {
+    display: flex;
+    margin-top: 15px;
+}
+/* ----- FOOTER SECTION WIDTHS -----*/
+.footerInfo__companyInfo {
+    width: 40%;
+}
+.footerInfo__links {
+    width: 15%
+}
+.footerInfo__twitterWidget {
+    width: 25%;
+}
+.footerInfo__instagram {
+    width: 20%;
+}
+.footerInfo__companyInfo, .footerInfo__links, .footerInfo__twitterWidget {
+    margin-right: 40px;
+}
+.footerInfo__links, .footerInfo__twitterWidget, .footerInfo__instagram {
+    position: relative;
+}
+
+.companyInfo__title, .footerInfo__title {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 1.5px;
+}
+.companyInfo__title {
+    color: $accentColor;
+    margin-bottom: 15px;
+}
+.companyInfo__description {
+    line-height: 2;
+}
+.companyInfo__logo {
+    opacity: 0.25;
+    width: 40%;
+    margin-top: 10px;
+}
+.footerInfo__title {
+    color: $lightColor;
+}
+.footerInfo__title::before {
+    content: '';
+    display: block;
+    background-color: $mainColor75;
+    width: 1px;
+    height: 250px;
+    position: absolute;
+    left: -20px;
+}
+.footerInfo__title::after {
+    content: '';
+    height: 3px;
+    width: 15px;
+    display: block;
+    background-color: $accentColor;
+    position: relative;
+    top: 5px;
+}
+.footerInfo__linksList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.footerInfo__linksList li {
+    padding: 8px 0;
+}
+.footerInfo__linkItem {
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    color: $mainColor50;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 8px 0;
+    transition: $allTrans;
+    font-weight: bold;
+}
+.footerInfo__linkItem:hover {
+    color: $accentColor;
+}
+.twitterWidget__tweetWrapper {
+    padding-top: 1px;
+    margin: 0;
+}
+.twitterWidget__tweet {
+    line-height: 1.7;
+    font-size: 0.6rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.twitterWidget__tweet a {
+    color: $mainColor50;
+    transition: $allTrans;
+    text-decoration: none;
+}
+.twitterWidget__tweet a:hover {
+    color: $accentColor;
+}
+.twitterWidget__timeStamp {
+    color: $mainColor75;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 18px;
+}
+.twitterWidget__timeStamp i {
+    margin-right: 5px;
+}
+.instagram__photosList {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    padding-top: 14px;
+}
+.instagram__photoItem {
+    width: calc(33% - 10px);
+    margin-right: 15px;
+    margin-bottom: 15px;
+    height: 55px;
+    background-color: $mainColor75;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: $allTrans;
+}
+.instagram__photoItem:nth-child(3n) {
+    margin-right: 0;
+}
+.instagram__photoItem i {
+    opacity: 0;
+    color: $lightColor;
+    transition: $allTrans;
+}
+.instagram__photoItem:hover {
+    background-color: $accentColor;
+}
+.instagram__photoItem:hover i {
+    opacity: 1;
+}
+.footerFinePrint {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    margin-top: 10px;
+}
+.finePrint__copyright {
+    color: $mainColor75;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.finePrint__iconList {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.finePrint__iconItem a {
+    color: $mainColor50;
+    padding: 10px 20px;
+}
+.finePrint__iconItem i {
+    position: relative;
+    left: -10px;
+}
+.finePrint__iconItem:hover a {
+    color: $accentColor;
+}

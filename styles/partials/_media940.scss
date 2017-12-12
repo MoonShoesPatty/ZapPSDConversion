@@ -1,0 +1,52 @@
+/* ----- BREAK POINT: 940px -----*/
+@media (max-width: 940px) {
+    /* ----- BLOG SECTION -----*/
+    .blogItem__image {
+        width: 40%;
+    }
+    .blogItem__description {
+        padding: 35px;
+    }
+    .blogItem:nth-child(-n + 2) .blogItem__description {
+        border-bottom: 1px solid $mainColor25;
+    }
+    .blogItem--leftImage {
+        clip-path: polygon(100% 0, 100% 44%, 87% 50%, 100% 56%, 100% 100%, 0 100%, 0 0);
+    }
+    .blogItem--rightImage {
+        clip-path: polygon(0 44%, 0 0, 100% 0, 100% 100%, 0 100%, 0% 56%, 13% 50%);
+        order: 2;
+    }
+
+    /* ----- CLIENTS SECTION -----*/
+    .clientList {
+        margin-bottom: 275px;
+    }
+
+    /* ----- PLAN LISTS -----*/
+    .planList {
+        flex-wrap: wrap;
+    }
+    .planItem {
+        width: calc(50% - 25px);
+        margin-right: 25px;
+    }
+    .planItem:nth-child(even) {
+        margin-right: 0;
+    }
+    .planItem:nth-child(-n + 2) {
+        margin-bottom: 25px;
+    }
+    .planItem__featureList {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .planItem__featureItem {
+        padding: 10px 0;
+        width: 50%;
+    }
+    .planItem__price {
+        font-size: calc(1rem + 3vw);
+        margin: 10px 0 15px 0;
+    }
+}
